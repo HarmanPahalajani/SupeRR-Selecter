@@ -1,8 +1,5 @@
 # SupeRR Intelligence — Cricket Scouting & Auction Decision Platform
 
-> **Independent Hackathon / Competition Prototype**  
-> *Developed for the Rajasthan Royals Competition.*
-
 ---
 
 ## 1. Overview
@@ -38,62 +35,7 @@ The platform operates **100% locally with free and open-source software (FOSS)**
 
 ---
 
-## 4. Quickstart Guide (Local Execution)
-
-### Step 1: Install Python Dependencies
-```powershell
-pip install -r backend/requirements.txt
-```
-*(Or install directly: `pip install scipy scikit-learn duckdb pyarrow statsmodels catboost ortools fastapi uvicorn pydantic pyyaml pytest httpx`)*
-
-### Step 2: Install Frontend Dependencies
-```powershell
-cd frontend
-npm install
-cd ..
-```
-
-### Step 3: Run Analytics & Model Training Pipeline
-```powershell
-# 1. Ingest raw CSVs and audit scoring semantics
-python -m backend.analytics.ingestion.run
-
-# 2. Reconstruct chronological pre-delivery states and pressure
-python -m backend.analytics.state.build_states
-
-# 3. Train Tabular ML models with temporal validation (Train 2022-2024, Val 2025, Test 2026)
-python -m backend.analytics.train.run_all
-
-# 4. Fit Empirical Bayes shrinkage and generate rankings
-python -m backend.analytics.ranking.build
-
-# 5. Initialize DuckDB views and SQLite user database
-python -m backend.analytics.export.build_dashboard_tables
-```
-
-### Step 4: Run Automated Tests
-```powershell
-python -m pytest backend/tests/test_api_and_analytics.py -v
-```
-
-### Step 5: Start Local Workstation
-In Terminal 1 (Backend):
-```powershell
-uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --reload
-```
-
-In Terminal 2 (Frontend):
-```powershell
-cd frontend
-npm run dev
-```
-Open **[http://localhost:3000](http://localhost:3000)** in your browser.
-
-*(Or simply run `powershell -ExecutionPolicy Bypass -File .\run-local.ps1` to start both automatically).*
-
----
-
-## 5. Mathematical Methodology & Formulation
+## 4. Mathematical Methodology & Formulation
 
 - **Second-Innings Situational Pressure $P(t)$:**
   $$P(t) = \frac{10}{1 + \left(\frac{10}{P(1)} - 1\right) \cdot \exp\left(-10 \cdot k \cdot \sum_{s=1}^{t-1} \Delta C(s) \cdot \Delta R(s)\right)}$$
