@@ -1,0 +1,38 @@
+# ML Model Hyperparameters & Configuration
+model_a_batter_runs:
+  algorithm: "CatBoostRegressor"
+  iterations: 350
+  depth: 6
+  learning_rate: 0.08
+  l2_leaf_reg: 3.0
+  loss_function: "RMSE"
+  random_seed: 42
+
+model_b_bowler_runs:
+  algorithm: "CatBoostRegressor"
+  iterations: 350
+  depth: 6
+  learning_rate: 0.08
+  l2_leaf_reg: 3.0
+  loss_function: "RMSE"
+  random_seed: 42
+
+model_c_wicket_prob:
+  algorithm: "CatBoostClassifier"
+  iterations: 300
+  depth: 5
+  learning_rate: 0.05
+  l2_leaf_reg: 4.0
+  loss_function: "Logloss"
+  random_seed: 42
+
+model_d_win_prob:
+  algorithm: "LogisticRegression"
+  random_seed: 42
+
+validation:
+  group_column: "match_id"
+  temporal_split_column: "season"
+  train_seasons: [2022, 2023, 2024]
+  val_seasons: [2025]
+  test_seasons: [2026]

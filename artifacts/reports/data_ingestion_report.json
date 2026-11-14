@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "total_deliveries": 200999,
+  "primary_scope_deliveries": 194014,
+  "ipl_deliveries": 87687,
+  "t20i_deliveries": 106327,
+  "super_over_deliveries": 38,
+  "total_matches": 883,
+  "primary_scope_matches": 853,
+  "unique_players": 1217,
+  "anomalies_audited": {
+    "extras_2_runs_count": 36,
+    "bowl_speed_zero_count": 77861,
+    "bowl_speed_outlier_count": 20,
+    "wicket_flag_missing_dismissed_player": 1,
+    "non_wicket_with_dismissed_player": 12
+  },
+  "verification": "1-based overid, Powerplay (1-6), Middle (7-15), Death (16-20), Super Overs isolated."
+}

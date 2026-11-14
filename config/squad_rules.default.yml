@@ -1,0 +1,50 @@
+# Default Squad Architecture & IPL Auction Constraints
+version: "1.0.0"
+
+ruleset_id: "ipl_auction_standard_2027"
+currency: "INR"
+default_total_purse: 1200000000 # 120 Crore INR
+default_remaining_purse: 450000000 # 45 Crore INR
+min_squad_size: 18
+max_squad_size: 25
+max_overseas_players: 8
+
+default_acquisition_target: 5
+
+role_requirements:
+  top_order_batter:
+    min: 2
+    target: 3
+    max: 5
+  middle_order_batter:
+    min: 3
+    target: 4
+    max: 6
+  finisher:
+    min: 1
+    target: 2
+    max: 3
+  wicketkeeper_batter:
+    min: 1
+    target: 2
+    max: 3
+  pace_bowler:
+    min: 3
+    target: 5
+    max: 7
+  spin_bowler:
+    min: 2
+    target: 3
+    max: 5
+  all_rounder:
+    min: 1
+    target: 3
+    max: 4
+  death_overs_specialist:
+    min: 1
+    target: 2
+    max: 3
+  powerplay_specialist:
+    min: 1
+    target: 2
+    max: 3

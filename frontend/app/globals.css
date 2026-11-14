@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rajasthan Royals Premium Brand Design Tokens */
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-page: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FDF2F8;
+  --bg-blush: #FDF2F8;
+  --bg-blush-subtle: #FFF9FC;
+
+  --border-subtle: #E2E8F0;
+  --border-muted: #CBD5E1;
+  --border-pink: #FCE7F3;
+  --border-active: #E50695;
+
+  --text-primary: #001C58;
+  --text-body: #1E293B;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-white: #FFFFFF;
+
+  --rr-pink: #E50695;
+  --rr-pink-hover: #D20588;
+  --rr-pink-dark: #C30B99;
+  --rr-navy: #001C58;
+  --rr-purple: #3920A6;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+html, body {
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  overflow-x: clip;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Accessible focus ring */
+*:focus-visible {
+  outline: 2px solid var(--rr-pink);
+  outline-offset: 2px;
+}
+
+/* Brand Metric Cards */
+.rr-metric-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 28, 88, 0.04);
+  transition: all 0.2s ease;
+}
+.rr-metric-card:hover {
+  border-color: #FCE7F3;
+  box-shadow: 0 4px 6px -1px rgba(0, 28, 88, 0.05);
+}
+
+/* Brand Buttons */
+.btn-rr-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #E50695;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 2px 4px rgba(229, 6, 149, 0.2);
+}
+.btn-rr-primary:hover {
+  background-color: #D20588;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(229, 6, 149, 0.25);
+}
+.btn-rr-primary:active {
+  transform: translateY(0);
+}
+
+.btn-rr-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  color: #001C58;
+  border: 1px solid #CBD5E1;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease-in-out;
+}
+.btn-rr-secondary:hover {
+  border-color: #E50695;
+  color: #E50695;
+  background-color: #FDF2F8;
+}
+
+/* Data Table Styling */
+.rr-table-wrapper {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 28, 88, 0.04);
+}
+.rr-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+.rr-table th {
+  background-color: #F8FAFC;
+  color: #001C58;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid #FCE7F3;
+}
+.rr-table td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid #F1F5F9;
+  color: #1E293B;
+}
+.rr-table tr:hover td {
+  background-color: #FDF2F8;
+}
+
+/* Badges and Tags */
+.badge-rr {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  border-width: 1px;
+}
+.badge-rr-pink {
+  background-color: #FDF2F8;
+  color: #C30B99;
+  border-color: #FCE7F3;
+}
+.badge-rr-navy {
+  background-color: #F0F4FF;
+  color: #001C58;
+  border-color: #D6E4FF;
+}
+.badge-rr-purple {
+  background-color: #F5F3FF;
+  color: #3920A6;
+  border-color: #DDD6FE;
+}
+.badge-rr-neutral {
+  background-color: #F8FAFC;
+  color: #475569;
+  border-color: #E2E8F0;
+}

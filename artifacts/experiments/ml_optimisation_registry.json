@@ -1,0 +1,134 @@
+{
+  "model_a": {
+    "existing_val_rmse": 1.7219454069166562,
+    "existing_test_rmse": 1.7895656982846224,
+    "cohort_baseline_test_rmse": 1.8132768481985218,
+    "poisson_val_rmse": 1.7335518544050827,
+    "candidate_val_rmse": 1.7211479742085347,
+    "candidate_test_rmse": 1.7884845893082038,
+    "best_hyperparameters": {
+      "iterations": 400,
+      "depth": 4,
+      "learning_rate": 0.04364136361022406,
+      "l2_leaf_reg": 2.3218869799698294,
+      "random_strength": 1.1399305465242953,
+      "loss_function": "RMSE",
+      "random_seed": 42,
+      "verbose": false,
+      "thread_count": 4
+    },
+    "search_duration_seconds": 339.4,
+    "feature_importance": {
+      "innings": 0.71,
+      "overid": 1.76,
+      "legal_balls_remaining": 4.4,
+      "pre_ball_score": 6.41,
+      "pre_ball_wickets": 1.51,
+      "wickets_in_hand": 1.12,
+      "current_run_rate": 6.69,
+      "striker_balls_faced_pre": 36.16,
+      "phase": 5.48,
+      "batting_type": 0.83,
+      "bowling_type": 2.5,
+      "pace_or_spin": 1.07,
+      "format_scope": 0.81,
+      "batting_order_num": 3.42,
+      "situational_pressure": 11.48,
+      "rrr_crr_diff": 4.38,
+      "resource_buffer": 11.26
+    }
+  },
+  "model_b": {
+    "existing_val_rmse": 1.7081181145075974,
+    "existing_test_rmse": 1.7725484482829774,
+    "candidate_val_rmse": 1.7070788138518698,
+    "candidate_test_rmse": 1.7705891486728575,
+    "best_hyperparameters": {
+      "iterations": 350,
+      "depth": 7,
+      "learning_rate": 0.054328222955813674,
+      "l2_leaf_reg": 6.015600296242097,
+      "random_strength": 0.8201521541372064,
+      "random_seed": 42,
+      "verbose": false,
+      "thread_count": 4
+    },
+    "search_duration_seconds": 262.3,
+    "feature_importance": {
+      "innings": 1.25,
+      "overid": 2.94,
+      "legal_balls_remaining": 3.17,
+      "pre_ball_score": 5.41,
+      "pre_ball_wickets": 2.02,
+      "wickets_in_hand": 2.46,
+      "current_run_rate": 7.04,
+      "striker_balls_faced_pre": 26.45,
+      "phase": 6.11,
+      "batting_type": 1.64,
+      "bowling_type": 3.64,
+      "pace_or_spin": 3.71,
+      "format_scope": 2.17,
+      "batting_order_num": 4.27,
+      "situational_pressure": 12.04,
+      "rrr_crr_diff": 4.85,
+      "resource_buffer": 10.84
+    }
+  },
+  "model_c": {
+    "existing_test_brier": 0.04817152515458267,
+    "existing_test_logloss": 0.19922635973203645,
+    "existing_test_prauc": 0.07177127693622928,
+    "lr_benchmark_val_brier": 0.04926525230342864,
+    "candidate_test_brier": 0.0481119684491988,
+    "candidate_test_logloss": 0.19867952705379657,
+    "candidate_test_prauc": 0.07468433028227886,
+    "best_hyperparameters": {
+      "iterations": 300,
+      "depth": 5,
+      "learning_rate": 0.03744033596777921,
+      "l2_leaf_reg": 7.709991493725479,
+      "auto_class_weights": null,
+      "loss_function": "Logloss",
+      "random_seed": 42,
+      "verbose": false,
+      "thread_count": 4
+    },
+    "search_duration_seconds": 326.8,
+    "feature_importance": {
+      "innings": 0.6,
+      "overid": 8.92,
+      "legal_balls_remaining": 7.42,
+      "pre_ball_score": 6.2,
+      "pre_ball_wickets": 4.94,
+      "wickets_in_hand": 3.67,
+      "current_run_rate": 4.72,
+      "striker_balls_faced_pre": 10.87,
+      "phase": 2.72,
+      "batting_type": 2.18,
+      "bowling_type": 5.86,
+      "pace_or_spin": 1.74,
+      "format_scope": 3.92,
+      "batting_order_num": 7.73,
+      "situational_pressure": 8.1,
+      "rrr_crr_diff": 7.99,
+      "resource_buffer": 12.4
+    }
+  },
+  "model_d": {
+    "existing_logistic_regression": {
+      "brier_score": 0.3949582224694054,
+      "log_loss": 1.1763669046433105,
+      "ece": 0.4601413261755571
+    },
+    "enhanced_logistic_regression": {
+      "brier_score": 0.13903537630834303,
+      "log_loss": 0.42412448662914926,
+      "ece": 0.11533676386175704
+    },
+    "catboost_classifier_challenger": {
+      "brier_score": 0.1355736884712995,
+      "log_loss": 0.41121286660077455,
+      "ece": 0.0924621568148981
+    }
+  }
+}

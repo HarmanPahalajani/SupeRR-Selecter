@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "total_players_evaluated": 1217,
+  "undervalued_talents_flagged": 59,
+  "cross_format_qualified_players": 111,
+  "high_evidence_players": 308,
+  "output_path": "data\\processed\\fact_player_metrics.parquet"
+}

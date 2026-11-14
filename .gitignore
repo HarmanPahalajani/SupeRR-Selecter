@@ -1,0 +1,55 @@
+# Antigravity / Python / Node Ignore
+.env
+.env.*
+!.env.example
+
+# Competition Raw & Intermediate Data (STRICT PRIVACY)
+/data/raw/
+/data/interim/
+/data/processed/
+/data/processed_pre_vNext_backup/
+/data/staging/
+/data/staging_ratings/
+/data/app/*.duckdb
+/data/app/*.db
+/data/app/*.sqlite3
+/data/exports/
+Dataset.zip
+*.zip
+*.parquet
+
+# Machine Learning Binaries & Private Artifacts
+/artifacts/models/
+/artifacts/backups/
+/artifacts/reports/private/
+catboost_info/
+*.cbm
+*.joblib
+*.pkl
+
+# Development Scratch Files & Debug Images
+scratch_*
+check_*.py
+audit_*.py
+inspect_*.py
+analyze_*.py
+print_*.py
+test_updated_classification.py
+run_validation_manifest.py
+*.png
+!frontend/public/images/*.png
+!docs/images/*.png
+backup/
+
+# Python / Node Build Artifacts
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+node_modules/
+.next/
+dist/
+build/
+*.log
+frontend/out/

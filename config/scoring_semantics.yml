@@ -1,0 +1,54 @@
+# Formal Scoring Semantics Mapping
+version: "1.0.0"
+audit_date: "2026-11-13"
+
+runs_semantics:
+  batter_runs_field: "runs"
+  description: "Verified as runs scored by the striker off the bat (0-6)."
+
+extras_semantics:
+  wides:
+    extras_type: "wide"
+    bowler_charged: true
+    is_legal_ball: false
+    runs_awarded_field: "extras1_runs"
+    additional_runs_field: "extras_2_runs"
+
+  no_balls:
+    extras_type: ["Overstep", "other"]
+    bowler_charged: true
+    is_legal_ball: false
+    penalty_field: "extras1_runs"
+    batter_runs_field: "runs"
+    extra_batter_runs_field: "extras_2_runs" # When runs == 0 and extras_2_runs > 0
+
+  byes:
+    extras_type: "byes"
+    bowler_charged: false
+    is_legal_ball: true
+    runs_awarded_field: "extras1_runs"
+
+  legbyes:
+    extras_type: "legbyes"
+    bowler_charged: false
+    is_legal_ball: true
+    runs_awarded_field: "extras1_runs"
+
+  penalty:
+    extras_type: "Penalty"
+    bowler_charged: false
+    is_legal_ball: true
+    runs_awarded_field: "extras1_runs"
+
+dismissal_attribution:
+  bowler_credited:
+    - "Caught"
+    - "Bowled"
+    - "LBW"
+    - "Stump"
+    - "Hit Wicket"
+  non_bowler_credited:
+    - "RunOut"
+    - "Retire Out"
+    - "Obstracting the field"
+    - "Obstructing the field"

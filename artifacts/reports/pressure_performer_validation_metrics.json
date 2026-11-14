@@ -1,0 +1,973 @@
+{
+  "validation_fold_2025": {
+    "all_primary": {
+      "fold": "2024 -> 2025",
+      "train_end_season": 2024,
+      "test_season": 2025,
+      "format_filter": "COMBINED",
+      "innings_filter": "COMBINED",
+      "evaluated_players": 192,
+      "spearman": {
+        "rho": 0.1786411849279766,
+        "p_value": 0.013170108017828381,
+        "ci_95": [
+          0.037994027915773165,
+          0.31234798958849525
+        ]
+      },
+      "kendall": {
+        "tau": 0.12238219895287958,
+        "p_value": 0.011712968482363242,
+        "ci_95": [
+          0.027223315670795487,
+          0.21754108223496366
+        ]
+      },
+      "baseline_positive_prevalence": 0.4479166666666667,
+      "precision_at_10": 0.6,
+      "lift_at_10": 0.1520833333333333,
+      "precision_at_20": 0.75,
+      "lift_at_20": 0.3020833333333333,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 46.286458333333336,
+        "median_future_hp_balls": 35.0,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 215.0,
+        "mean_future_hp_matches": 4.4375,
+        "total_future_hp_balls": 8887.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 7,
+          "mean_future_rae_per_100": 5.108719335795125,
+          "median_future_rae_per_100": 13.08248423717569,
+          "mean_future_pos_match_pct": 39.25170068027211,
+          "future_positive_rate": 0.5714285714285714
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 2,
+          "mean_future_rae_per_100": 3.847190529425315,
+          "median_future_rae_per_100": 3.847190529425315,
+          "mean_future_pos_match_pct": 55.0,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 28,
+          "mean_future_rae_per_100": 2.610657193809352,
+          "median_future_rae_per_100": 0.00019895882017162414,
+          "mean_future_pos_match_pct": 41.88620902906617,
+          "future_positive_rate": 0.5
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 109,
+          "mean_future_rae_per_100": -7.469468299527786,
+          "median_future_rae_per_100": -7.2580196548515845,
+          "mean_future_pos_match_pct": 34.95988720759363,
+          "future_positive_rate": 0.3577981651376147
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 26,
+          "mean_future_rae_per_100": 7.3066819391412805,
+          "median_future_rae_per_100": 6.389488094355844,
+          "mean_future_pos_match_pct": 47.91666666666667,
+          "future_positive_rate": 0.6153846153846154
+        },
+        "Struggles Under Pressure": {
+          "player_count": 20,
+          "mean_future_rae_per_100": 1.8371109392981542,
+          "median_future_rae_per_100": 2.4697166436469997,
+          "mean_future_pos_match_pct": 48.99816849816849,
+          "future_positive_rate": 0.55
+        }
+      }
+    },
+    "ipl_only": {
+      "fold": "2024 -> 2025",
+      "train_end_season": 2024,
+      "test_season": 2025,
+      "format_filter": "IPL",
+      "innings_filter": "COMBINED",
+      "evaluated_players": 70,
+      "spearman": {
+        "rho": 0.21196745691540547,
+        "p_value": 0.078138280253766,
+        "ci_95": [
+          -0.024212513688127123,
+          0.4257368680391241
+        ]
+      },
+      "kendall": {
+        "tau": 0.15279503105590064,
+        "p_value": 0.061386133617292456,
+        "ci_95": [
+          -0.007290569608064151,
+          0.31288063171986547
+        ]
+      },
+      "baseline_positive_prevalence": 0.4857142857142857,
+      "precision_at_10": 0.7,
+      "lift_at_10": 0.21428571428571425,
+      "precision_at_20": 0.65,
+      "lift_at_20": 0.1642857142857143,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 42.44285714285714,
+        "median_future_hp_balls": 37.0,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 115.0,
+        "mean_future_hp_matches": 3.585714285714286,
+        "total_future_hp_balls": 2971.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 6,
+          "mean_future_rae_per_100": 12.242359114051864,
+          "median_future_rae_per_100": 13.244007162563125,
+          "mean_future_pos_match_pct": 38.88888888888889,
+          "future_positive_rate": 0.6666666666666666
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 1,
+          "mean_future_rae_per_100": 7.412432898617368,
+          "median_future_rae_per_100": 7.412432898617368,
+          "mean_future_pos_match_pct": 60.0,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 9,
+          "mean_future_rae_per_100": -1.9930595007907494,
+          "median_future_rae_per_100": -4.511088692592119,
+          "mean_future_pos_match_pct": 39.021164021164026,
+          "future_positive_rate": 0.3333333333333333
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 27,
+          "mean_future_rae_per_100": 0.186921493375956,
+          "median_future_rae_per_100": -2.4877238087140237,
+          "mean_future_pos_match_pct": 37.68518518518519,
+          "future_positive_rate": 0.4444444444444444
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 20,
+          "mean_future_rae_per_100": 13.885379588216106,
+          "median_future_rae_per_100": 5.868053285987802,
+          "mean_future_pos_match_pct": 50.44047619047619,
+          "future_positive_rate": 0.55
+        },
+        "Struggles Under Pressure": {
+          "player_count": 7,
+          "mean_future_rae_per_100": -12.776435796527648,
+          "median_future_rae_per_100": -0.08028143881500527,
+          "mean_future_pos_match_pct": 48.80952380952381,
+          "future_positive_rate": 0.42857142857142855
+        }
+      }
+    },
+    "t20i_only": {
+      "fold": "2024 -> 2025",
+      "train_end_season": 2024,
+      "test_season": 2025,
+      "format_filter": "T20I",
+      "innings_filter": "COMBINED",
+      "evaluated_players": 122,
+      "spearman": {
+        "rho": 0.07373249047488442,
+        "p_value": 0.41959878492047065,
+        "ci_95": [
+          -0.10541002398010167,
+          0.24823980288666808
+        ]
+      },
+      "kendall": {
+        "tau": 0.058122205663189264,
+        "p_value": 0.3424482818142722,
+        "ci_95": [
+          -0.06187438503143136,
+          0.1781187963578099
+        ]
+      },
+      "baseline_positive_prevalence": 0.4262295081967213,
+      "precision_at_10": 0.6,
+      "lift_at_10": 0.1737704918032787,
+      "precision_at_20": 0.7,
+      "lift_at_20": 0.27377049180327867,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 42.31967213114754,
+        "median_future_hp_balls": 32.5,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 215.0,
+        "mean_future_hp_matches": 4.040983606557377,
+        "total_future_hp_balls": 5163.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 3,
+          "mean_future_rae_per_100": -22.521871930776342,
+          "median_future_rae_per_100": -12.559617812853858,
+          "mean_future_pos_match_pct": 38.88888888888889,
+          "future_positive_rate": 0.0
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 1,
+          "mean_future_rae_per_100": 0.2819481602332624,
+          "median_future_rae_per_100": 0.2819481602332624,
+          "mean_future_pos_match_pct": 50.0,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 21,
+          "mean_future_rae_per_100": 6.362098623604755,
+          "median_future_rae_per_100": 1.322059175643002,
+          "mean_future_pos_match_pct": 43.44928880643166,
+          "future_positive_rate": 0.5238095238095238
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 74,
+          "mean_future_rae_per_100": -6.264035665161506,
+          "median_future_rae_per_100": -6.167090307524333,
+          "mean_future_pos_match_pct": 37.39338364338364,
+          "future_positive_rate": 0.33783783783783783
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 8,
+          "mean_future_rae_per_100": 19.207720038927317,
+          "median_future_rae_per_100": 20.438042728360557,
+          "mean_future_pos_match_pct": 64.16666666666667,
+          "future_positive_rate": 0.75
+        },
+        "Struggles Under Pressure": {
+          "player_count": 15,
+          "mean_future_rae_per_100": 7.888327849243393,
+          "median_future_rae_per_100": 3.444267492353947,
+          "mean_future_pos_match_pct": 48.18803418803419,
+          "future_positive_rate": 0.6
+        }
+      }
+    },
+    "chase_only": {
+      "fold": "2024 -> 2025",
+      "train_end_season": 2024,
+      "test_season": 2025,
+      "format_filter": "COMBINED",
+      "innings_filter": "CHASE",
+      "evaluated_players": 107,
+      "spearman": {
+        "rho": 0.05635886283038461,
+        "p_value": 0.5642152506298929,
+        "ci_95": [
+          -0.13494347017288805,
+          0.2436105901237179
+        ]
+      },
+      "kendall": {
+        "tau": 0.044260271557044616,
+        "p_value": 0.4992418300415088,
+        "ci_95": [
+          -0.08412614287503381,
+          0.17264668598912306
+        ]
+      },
+      "baseline_positive_prevalence": 0.5046728971962616,
+      "precision_at_10": 0.5,
+      "lift_at_10": -0.004672897196261627,
+      "precision_at_20": 0.65,
+      "lift_at_20": 0.1453271028037384,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 34.71028037383178,
+        "median_future_hp_balls": 29.0,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 111.0,
+        "mean_future_hp_matches": 3.0654205607476634,
+        "total_future_hp_balls": 3714.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 7,
+          "mean_future_rae_per_100": -3.1970216284633213,
+          "median_future_rae_per_100": -4.779889288690493,
+          "mean_future_pos_match_pct": 29.523809523809526,
+          "future_positive_rate": 0.2857142857142857
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 1,
+          "mean_future_rae_per_100": 5.707543822793471,
+          "median_future_rae_per_100": 5.707543822793471,
+          "mean_future_pos_match_pct": 50.0,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 15,
+          "mean_future_rae_per_100": 0.2723376110412879,
+          "median_future_rae_per_100": -1.7994578982099734,
+          "mean_future_pos_match_pct": 36.43650793650794,
+          "future_positive_rate": 0.4666666666666667
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 55,
+          "mean_future_rae_per_100": -1.7424160791723011,
+          "median_future_rae_per_100": -0.8757724525996213,
+          "mean_future_pos_match_pct": 43.53679653679654,
+          "future_positive_rate": 0.45454545454545453
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 18,
+          "mean_future_rae_per_100": 17.954408658602656,
+          "median_future_rae_per_100": 7.088013691692019,
+          "mean_future_pos_match_pct": 53.26719576719577,
+          "future_positive_rate": 0.6666666666666666
+        },
+        "Struggles Under Pressure": {
+          "player_count": 11,
+          "mean_future_rae_per_100": 13.089345066980384,
+          "median_future_rae_per_100": 20.895470888544256,
+          "mean_future_pos_match_pct": 52.5974025974026,
+          "future_positive_rate": 0.6363636363636364
+        }
+      }
+    },
+    "first_innings_only": {
+      "fold": "2024 -> 2025",
+      "train_end_season": 2024,
+      "test_season": 2025,
+      "format_filter": "COMBINED",
+      "innings_filter": "FIRST_INNINGS",
+      "evaluated_players": 114,
+      "spearman": {
+        "rho": 0.3359227233146352,
+        "p_value": 0.00025826683475133543,
+        "ci_95": [
+          0.16201755333494883,
+          0.4895900820469686
+        ]
+      },
+      "kendall": {
+        "tau": 0.2209284272628474,
+        "p_value": 0.0004925982633398207,
+        "ci_95": [
+          0.09666934342511764,
+          0.34518751110057716
+        ]
+      },
+      "baseline_positive_prevalence": 0.38596491228070173,
+      "precision_at_10": 0.8,
+      "lift_at_10": 0.4140350877192983,
+      "precision_at_20": 0.7,
+      "lift_at_20": 0.3140350877192982,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 38.3859649122807,
+        "median_future_hp_balls": 29.5,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 197.0,
+        "mean_future_hp_matches": 3.1403508771929824,
+        "total_future_hp_balls": 4376.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 4,
+          "mean_future_rae_per_100": 6.044111200145482,
+          "median_future_rae_per_100": 4.852916705341513,
+          "mean_future_pos_match_pct": 50.0,
+          "future_positive_rate": 0.5
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 2,
+          "mean_future_rae_per_100": 4.477258231360234,
+          "median_future_rae_per_100": 4.477258231360234,
+          "mean_future_pos_match_pct": 58.333333333333336,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 17,
+          "mean_future_rae_per_100": 0.6308318813696953,
+          "median_future_rae_per_100": -0.8145228500653023,
+          "mean_future_pos_match_pct": 51.44257703081233,
+          "future_positive_rate": 0.47058823529411764
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 65,
+          "mean_future_rae_per_100": -11.844108073035255,
+          "median_future_rae_per_100": -14.860166451985007,
+          "mean_future_pos_match_pct": 30.545787545787544,
+          "future_positive_rate": 0.3076923076923077
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 14,
+          "mean_future_rae_per_100": 6.128851448126974,
+          "median_future_rae_per_100": 7.694146949410627,
+          "mean_future_pos_match_pct": 52.97619047619048,
+          "future_positive_rate": 0.5714285714285714
+        },
+        "Struggles Under Pressure": {
+          "player_count": 12,
+          "mean_future_rae_per_100": -14.580557714819975,
+          "median_future_rae_per_100": -9.011312326700672,
+          "mean_future_pos_match_pct": 39.345238095238095,
+          "future_positive_rate": 0.3333333333333333
+        }
+      }
+    }
+  },
+  "holdout_fold_2026": {
+    "all_primary": {
+      "fold": "2025 -> 2026",
+      "train_end_season": 2025,
+      "test_season": 2026,
+      "format_filter": "COMBINED",
+      "innings_filter": "COMBINED",
+      "evaluated_players": 139,
+      "spearman": {
+        "rho": 0.12510389204164618,
+        "p_value": 0.1422658002198531,
+        "ci_95": [
+          -0.042277552591225995,
+          0.28565454420499964
+        ]
+      },
+      "kendall": {
+        "tau": 0.08664372849546449,
+        "p_value": 0.1302281717995278,
+        "ci_95": [
+          -0.025580882470806462,
+          0.19886833946173543
+        ]
+      },
+      "baseline_positive_prevalence": 0.5035971223021583,
+      "precision_at_10": 0.3,
+      "lift_at_10": -0.20359712230215826,
+      "precision_at_20": 0.4,
+      "lift_at_20": -0.10359712230215823,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 43.54676258992806,
+        "median_future_hp_balls": 35.0,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 191.0,
+        "mean_future_hp_matches": 4.093525179856115,
+        "total_future_hp_balls": 6053.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 10,
+          "mean_future_rae_per_100": 3.2593460785652946,
+          "median_future_rae_per_100": -4.481780678018415,
+          "mean_future_pos_match_pct": 48.333333333333336,
+          "future_positive_rate": 0.3
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 1,
+          "mean_future_rae_per_100": 79.33443303781343,
+          "median_future_rae_per_100": 79.33443303781343,
+          "mean_future_pos_match_pct": 75.0,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 14,
+          "mean_future_rae_per_100": 12.067799177025998,
+          "median_future_rae_per_100": 22.661379674031874,
+          "mean_future_pos_match_pct": 55.83333333333333,
+          "future_positive_rate": 0.6428571428571429
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 72,
+          "mean_future_rae_per_100": 2.6320732022417865,
+          "median_future_rae_per_100": 0.5766532370786484,
+          "mean_future_pos_match_pct": 45.0071225071225,
+          "future_positive_rate": 0.5277777777777778
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 21,
+          "mean_future_rae_per_100": 3.012000320184298,
+          "median_future_rae_per_100": 5.088626180445927,
+          "mean_future_pos_match_pct": 52.263794406651556,
+          "future_positive_rate": 0.5714285714285714
+        },
+        "Struggles Under Pressure": {
+          "player_count": 21,
+          "mean_future_rae_per_100": -13.30721177075988,
+          "median_future_rae_per_100": -18.74908283410862,
+          "mean_future_pos_match_pct": 35.8843537414966,
+          "future_positive_rate": 0.3333333333333333
+        }
+      }
+    },
+    "chase_only": {
+      "fold": "2025 -> 2026",
+      "train_end_season": 2025,
+      "test_season": 2026,
+      "format_filter": "COMBINED",
+      "innings_filter": "CHASE",
+      "evaluated_players": 90,
+      "spearman": {
+        "rho": 0.15018315018315018,
+        "p_value": 0.15769285822938983,
+        "ci_95": [
+          -0.058734707968927775,
+          0.3464976356867979
+        ]
+      },
+      "kendall": {
+        "tau": 0.10811485642946317,
+        "p_value": 0.13126967143243945,
+        "ci_95": [
+          -0.03229947624268448,
+          0.24852918910161081
+        ]
+      },
+      "baseline_positive_prevalence": 0.5444444444444444,
+      "precision_at_10": 0.5,
+      "lift_at_10": -0.0444444444444444,
+      "precision_at_20": 0.55,
+      "lift_at_20": 0.005555555555555647,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 36.37777777777778,
+        "median_future_hp_balls": 30.5,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 151.0,
+        "mean_future_hp_matches": 2.977777777777778,
+        "total_future_hp_balls": 3274.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 8,
+          "mean_future_rae_per_100": 5.4632915047188195,
+          "median_future_rae_per_100": 3.595650922717101,
+          "mean_future_pos_match_pct": 49.375,
+          "future_positive_rate": 0.5
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 1,
+          "mean_future_rae_per_100": 70.02833711703826,
+          "median_future_rae_per_100": 70.02833711703826,
+          "mean_future_pos_match_pct": 50.0,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 11,
+          "mean_future_rae_per_100": 7.462672868165578,
+          "median_future_rae_per_100": 14.998610500777065,
+          "mean_future_pos_match_pct": 51.51515151515152,
+          "future_positive_rate": 0.6363636363636364
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 46,
+          "mean_future_rae_per_100": 8.282279315921368,
+          "median_future_rae_per_100": 9.573121894890996,
+          "mean_future_pos_match_pct": 47.14630779848171,
+          "future_positive_rate": 0.5869565217391305
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 14,
+          "mean_future_rae_per_100": 6.055602185053796,
+          "median_future_rae_per_100": 4.307299242472235,
+          "mean_future_pos_match_pct": 47.38095238095239,
+          "future_positive_rate": 0.5714285714285714
+        },
+        "Struggles Under Pressure": {
+          "player_count": 10,
+          "mean_future_rae_per_100": -19.566349625801433,
+          "median_future_rae_per_100": -23.15143307691475,
+          "mean_future_pos_match_pct": 35.833333333333336,
+          "future_positive_rate": 0.2
+        }
+      }
+    },
+    "first_innings_only": {
+      "fold": "2025 -> 2026",
+      "train_end_season": 2025,
+      "test_season": 2026,
+      "format_filter": "COMBINED",
+      "innings_filter": "FIRST_INNINGS",
+      "evaluated_players": 68,
+      "spearman": {
+        "rho": -0.12295300988662822,
+        "p_value": 0.3178453421981138,
+        "ci_95": [
+          -0.3510859860456139,
+          0.11895938513016142
+        ]
+      },
+      "kendall": {
+        "tau": -0.06760316066725197,
+        "p_value": 0.41496708910133295,
+        "ci_95": [
+          -0.2301428902030986,
+          0.09493656886859467
+        ]
+      },
+      "baseline_positive_prevalence": 0.5588235294117647,
+      "precision_at_10": 0.6,
+      "lift_at_10": 0.04117647058823526,
+      "precision_at_20": 0.55,
+      "lift_at_20": -0.008823529411764675,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 30.58823529411765,
+        "median_future_hp_balls": 27.0,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 95.0,
+        "mean_future_hp_matches": 2.4411764705882355,
+        "total_future_hp_balls": 2080.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 6,
+          "mean_future_rae_per_100": -11.513363234282112,
+          "median_future_rae_per_100": -10.264011128627606,
+          "mean_future_pos_match_pct": 45.833333333333336,
+          "future_positive_rate": 0.5
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 2,
+          "mean_future_rae_per_100": 8.472268456451687,
+          "median_future_rae_per_100": 8.472268456451687,
+          "mean_future_pos_match_pct": 41.66666666666667,
+          "future_positive_rate": 1.0
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 39,
+          "mean_future_rae_per_100": 6.783050439599903,
+          "median_future_rae_per_100": 7.382649672036338,
+          "mean_future_pos_match_pct": 50.0,
+          "future_positive_rate": 0.5384615384615384
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 13,
+          "mean_future_rae_per_100": -2.7129893250896506,
+          "median_future_rae_per_100": 5.725196461298468,
+          "mean_future_pos_match_pct": 59.48717948717949,
+          "future_positive_rate": 0.5384615384615384
+        },
+        "Struggles Under Pressure": {
+          "player_count": 8,
+          "mean_future_rae_per_100": 9.18200590710964,
+          "median_future_rae_per_100": 11.872073181978422,
+          "mean_future_pos_match_pct": 53.75,
+          "future_positive_rate": 0.625
+        }
+      }
+    }
+  },
+  "threshold_selection_tradeoff": {
+    "p70": {
+      "fold": "2024 -> 2025",
+      "train_end_season": 2024,
+      "test_season": 2025,
+      "format_filter": "COMBINED",
+      "innings_filter": "COMBINED",
+      "evaluated_players": 209,
+      "spearman": {
+        "rho": 0.2090186129659814,
+        "p_value": 0.002387519283069402,
+        "ci_95": [
+          0.07544411436241753,
+          0.335223967615638
+        ]
+      },
+      "kendall": {
+        "tau": 0.14225248435774754,
+        "p_value": 0.002219661320682872,
+        "ci_95": [
+          0.05111286566052803,
+          0.23339210305496705
+        ]
+      },
+      "baseline_positive_prevalence": 0.4354066985645933,
+      "precision_at_10": 0.3,
+      "lift_at_10": -0.1354066985645933,
+      "precision_at_20": 0.6,
+      "lift_at_20": 0.16459330143540668,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 51.61244019138756,
+        "median_future_hp_balls": 39.0,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 242.0,
+        "mean_future_hp_matches": 4.875598086124402,
+        "total_future_hp_balls": 10787.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 12,
+          "mean_future_rae_per_100": 1.0871189630544287,
+          "median_future_rae_per_100": -3.523929249786241,
+          "mean_future_pos_match_pct": 44.90740740740741,
+          "future_positive_rate": 0.4166666666666667
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 2,
+          "mean_future_rae_per_100": 12.008213276809723,
+          "median_future_rae_per_100": 12.008213276809723,
+          "mean_future_pos_match_pct": 55.0,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 22,
+          "mean_future_rae_per_100": -5.085300383696083,
+          "median_future_rae_per_100": -9.48756071315432,
+          "mean_future_pos_match_pct": 34.15289256198348,
+          "future_positive_rate": 0.36363636363636365
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 112,
+          "mean_future_rae_per_100": -8.138037077322121,
+          "median_future_rae_per_100": -5.742068243784895,
+          "mean_future_pos_match_pct": 38.317788362431216,
+          "future_positive_rate": 0.39285714285714285
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 39,
+          "mean_future_rae_per_100": 7.872051695387102,
+          "median_future_rae_per_100": 8.863417429479318,
+          "mean_future_pos_match_pct": 52.35042735042735,
+          "future_positive_rate": 0.6410256410256411
+        },
+        "Struggles Under Pressure": {
+          "player_count": 22,
+          "mean_future_rae_per_100": -3.6374394652169912,
+          "median_future_rae_per_100": -9.785604934713419,
+          "mean_future_pos_match_pct": 39.8816082906992,
+          "future_positive_rate": 0.3181818181818182
+        }
+      }
+    },
+    "p75": {
+      "fold": "2024 -> 2025",
+      "train_end_season": 2024,
+      "test_season": 2025,
+      "format_filter": "COMBINED",
+      "innings_filter": "COMBINED",
+      "evaluated_players": 192,
+      "spearman": {
+        "rho": 0.1786411849279766,
+        "p_value": 0.013170108017828381,
+        "ci_95": [
+          0.037994027915773165,
+          0.31234798958849525
+        ]
+      },
+      "kendall": {
+        "tau": 0.12238219895287958,
+        "p_value": 0.011712968482363242,
+        "ci_95": [
+          0.027223315670795487,
+          0.21754108223496366
+        ]
+      },
+      "baseline_positive_prevalence": 0.4479166666666667,
+      "precision_at_10": 0.6,
+      "lift_at_10": 0.1520833333333333,
+      "precision_at_20": 0.75,
+      "lift_at_20": 0.3020833333333333,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 46.286458333333336,
+        "median_future_hp_balls": 35.0,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 215.0,
+        "mean_future_hp_matches": 4.4375,
+        "total_future_hp_balls": 8887.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 7,
+          "mean_future_rae_per_100": 5.108719335795125,
+          "median_future_rae_per_100": 13.08248423717569,
+          "mean_future_pos_match_pct": 39.25170068027211,
+          "future_positive_rate": 0.5714285714285714
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 2,
+          "mean_future_rae_per_100": 3.847190529425315,
+          "median_future_rae_per_100": 3.847190529425315,
+          "mean_future_pos_match_pct": 55.0,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 28,
+          "mean_future_rae_per_100": 2.610657193809352,
+          "median_future_rae_per_100": 0.00019895882017162414,
+          "mean_future_pos_match_pct": 41.88620902906617,
+          "future_positive_rate": 0.5
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 109,
+          "mean_future_rae_per_100": -7.469468299527786,
+          "median_future_rae_per_100": -7.2580196548515845,
+          "mean_future_pos_match_pct": 34.95988720759363,
+          "future_positive_rate": 0.3577981651376147
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 26,
+          "mean_future_rae_per_100": 7.3066819391412805,
+          "median_future_rae_per_100": 6.389488094355844,
+          "mean_future_pos_match_pct": 47.91666666666667,
+          "future_positive_rate": 0.6153846153846154
+        },
+        "Struggles Under Pressure": {
+          "player_count": 20,
+          "mean_future_rae_per_100": 1.8371109392981542,
+          "median_future_rae_per_100": 2.4697166436469997,
+          "mean_future_pos_match_pct": 48.99816849816849,
+          "future_positive_rate": 0.55
+        }
+      }
+    },
+    "p80": {
+      "fold": "2024 -> 2025",
+      "train_end_season": 2024,
+      "test_season": 2025,
+      "format_filter": "COMBINED",
+      "innings_filter": "COMBINED",
+      "evaluated_players": 165,
+      "spearman": {
+        "rho": 0.22328961077124468,
+        "p_value": 0.00394043052009844,
+        "ci_95": [
+          0.07299629737512797,
+          0.36366670710625704
+        ]
+      },
+      "kendall": {
+        "tau": 0.1501847745750185,
+        "p_value": 0.004191940480619833,
+        "ci_95": [
+          0.047383063921290686,
+          0.25298648522874634
+        ]
+      },
+      "baseline_positive_prevalence": 0.40606060606060607,
+      "precision_at_10": 0.6,
+      "lift_at_10": 0.1939393939393939,
+      "precision_at_20": 0.65,
+      "lift_at_20": 0.24393939393939396,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 41.23030303030303,
+        "median_future_hp_balls": 32.0,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 175.0,
+        "mean_future_hp_matches": 4.090909090909091,
+        "total_future_hp_balls": 6803.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 7,
+          "mean_future_rae_per_100": -3.41768443339351,
+          "median_future_rae_per_100": 7.399996874885387,
+          "mean_future_pos_match_pct": 47.976190476190474,
+          "future_positive_rate": 0.5714285714285714
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 3,
+          "mean_future_rae_per_100": 12.275831618059627,
+          "median_future_rae_per_100": 20.37122427795498,
+          "mean_future_pos_match_pct": 56.547619047619044,
+          "future_positive_rate": 0.6666666666666666
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 21,
+          "mean_future_rae_per_100": -7.015452013512078,
+          "median_future_rae_per_100": -11.043581632881686,
+          "mean_future_pos_match_pct": 36.04308390022676,
+          "future_positive_rate": 0.38095238095238093
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 97,
+          "mean_future_rae_per_100": -10.212633319675579,
+          "median_future_rae_per_100": -7.528282857781998,
+          "mean_future_pos_match_pct": 35.009409261986576,
+          "future_positive_rate": 0.36082474226804123
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 22,
+          "mean_future_rae_per_100": 2.5352135845774515,
+          "median_future_rae_per_100": 9.50511204739001,
+          "mean_future_pos_match_pct": 53.88528138528138,
+          "future_positive_rate": 0.5909090909090909
+        },
+        "Struggles Under Pressure": {
+          "player_count": 15,
+          "mean_future_rae_per_100": -7.563869492272914,
+          "median_future_rae_per_100": -6.738810202510535,
+          "mean_future_pos_match_pct": 38.80952380952381,
+          "future_positive_rate": 0.3333333333333333
+        }
+      }
+    },
+    "p85": {
+      "fold": "2024 -> 2025",
+      "train_end_season": 2024,
+      "test_season": 2025,
+      "format_filter": "COMBINED",
+      "innings_filter": "COMBINED",
+      "evaluated_players": 127,
+      "spearman": {
+        "rho": 0.3418693757030371,
+        "p_value": 8.36195238318437e-05,
+        "ci_95": [
+          0.17827240070731085,
+          0.4870745138208742
+        ]
+      },
+      "kendall": {
+        "tau": 0.24159480064991876,
+        "p_value": 5.6161051759999335e-05,
+        "ci_95": [
+          0.124049686209499,
+          0.3591399150903385
+        ]
+      },
+      "baseline_positive_prevalence": 0.4330708661417323,
+      "precision_at_10": 0.9,
+      "lift_at_10": 0.46692913385826773,
+      "precision_at_20": 0.75,
+      "lift_at_20": 0.3169291338582677,
+      "future_opportunity_distribution": {
+        "mean_future_hp_balls": 37.39370078740158,
+        "median_future_hp_balls": 30.0,
+        "min_future_hp_balls": 15.0,
+        "max_future_hp_balls": 143.0,
+        "mean_future_hp_matches": 3.826771653543307,
+        "total_future_hp_balls": 4749.0
+      },
+      "class_performance": {
+        "Elite Pressure Performer": {
+          "player_count": 3,
+          "mean_future_rae_per_100": 12.70276152871292,
+          "median_future_rae_per_100": 21.785440691184583,
+          "mean_future_pos_match_pct": 54.166666666666664,
+          "future_positive_rate": 0.6666666666666666
+        },
+        "Hidden Pressure Talent": {
+          "player_count": 2,
+          "mean_future_rae_per_100": 29.900997183477028,
+          "median_future_rae_per_100": 29.900997183477028,
+          "mean_future_pos_match_pct": 70.23809523809524,
+          "future_positive_rate": 1.0
+        },
+        "High Impact \u2014 Limited Evidence": {
+          "player_count": 17,
+          "mean_future_rae_per_100": -1.446959184785536,
+          "median_future_rae_per_100": 3.5611383635234803,
+          "mean_future_pos_match_pct": 43.8235294117647,
+          "future_positive_rate": 0.5294117647058824
+        },
+        "Insufficient Pressure Evidence": {
+          "player_count": 78,
+          "mean_future_rae_per_100": -10.340515407942657,
+          "median_future_rae_per_100": -7.891287759661717,
+          "mean_future_pos_match_pct": 36.02869352869353,
+          "future_positive_rate": 0.34615384615384615
+        },
+        "Reliable Pressure Performer": {
+          "player_count": 16,
+          "mean_future_rae_per_100": 12.838977619413708,
+          "median_future_rae_per_100": 20.701852301762596,
+          "mean_future_pos_match_pct": 56.770833333333336,
+          "future_positive_rate": 0.625
+        },
+        "Struggles Under Pressure": {
+          "player_count": 11,
+          "mean_future_rae_per_100": -7.276920398244472,
+          "median_future_rae_per_100": -12.85402714879263,
+          "mean_future_pos_match_pct": 37.01298701298702,
+          "future_positive_rate": 0.45454545454545453
+        }
+      }
+    }
+  }
+}

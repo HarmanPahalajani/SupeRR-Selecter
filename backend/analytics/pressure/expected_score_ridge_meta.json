@@ -1,0 +1,16 @@
+{
+  "model_type": "Ridge",
+  "alpha": 100.0,
+  "features": [
+    "pre_ball_legal_balls",
+    "legal_balls_remaining",
+    "pre_ball_score",
+    "pre_ball_wickets",
+    "wickets_in_hand",
+    "current_run_rate",
+    "resource_consumed_pct",
+    "venue_par_score"
+  ],
+  "val_rmse": 24.405512799486708,
+  "test_rmse": 26.39313435195059
+}

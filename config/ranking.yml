@@ -1,0 +1,26 @@
+# Player Ranking Weights and Scoring Configuration
+version: "1.0.0"
+
+batting_ranking:
+  weights:
+    pressure_rae_per_ball: 0.50
+    eb_posterior_impact: 0.30
+    positive_match_freq: 0.20
+  opportunity_thresholds:
+    min_matches: 5
+    min_pressure_balls: 15
+
+bowling_ranking:
+  weights:
+    pressure_runs_saved_per_ball: 0.40
+    pressure_wickets_above_expected: 0.35
+    eb_posterior_impact: 0.15
+    positive_match_freq: 0.10
+  opportunity_thresholds:
+    min_matches: 5
+    min_pressure_balls: 18
+
+undervalued_detector:
+  min_matches: 8
+  min_pressure_opportunities: 25
+  min_discovery_gap_percentile: 20.0

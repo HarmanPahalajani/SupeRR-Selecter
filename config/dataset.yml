@@ -1,0 +1,17 @@
+# Dataset configuration
+raw_dir: "data/raw"
+processed_dir: "data/processed"
+app_dir: "data/app"
+
+primary_scope:
+  formats: ["T20"]
+  competition_prefixes: ["IPL", "Indian Premier League", "ICC Men's T20 World Cup"]
+  include_t20i: true
+  exclude_competitions:
+    - "Men's T20 Emerging Teams Asia Cup 2024"
+    - "Asia Cup Rising Stars 2025"
+
+temporal_splits:
+  train_seasons: [2022, 2023, 2024]
+  val_seasons: [2025]
+  test_seasons: [2026]

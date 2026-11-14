@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "total_regulation_states": 200961,
+  "mean_pressure_innings_1": 6.910266133528214,
+  "mean_pressure_innings_2": 7.13843800832302,
+  "high_pressure_deliveries_count": 121235,
+  "output_path": "data\\processed\\fact_delivery_states.parquet"
+}

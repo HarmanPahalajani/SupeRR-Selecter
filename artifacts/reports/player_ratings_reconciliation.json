@@ -1,0 +1,20 @@
+{
+  "total_players": 1217,
+  "eligible_batters": 341,
+  "eligible_bowlers": 311,
+  "eligible_both_disciplines": 145,
+  "limited_batting_evidence": 315,
+  "insufficient_batting_data": 561,
+  "limited_bowling_evidence": 195,
+  "insufficient_bowling_data": 711,
+  "insufficient_both_disciplines": 419,
+  "officially_ranked_batters": 341,
+  "officially_ranked_bowlers": 311,
+  "emerging_discovery_candidates": 150,
+  "emerging_only_unranked": 94,
+  "accounting_check": {
+    "batting_partition_sum": 1217,
+    "bowling_partition_sum": 1217,
+    "expected_total": 1217
+  }
+}

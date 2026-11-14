@@ -1,0 +1,26 @@
+# Pressure Model Configuration (Mallawa Arachchi, Manage & Scariano 2024 Adaptation)
+version: "1.0.0"
+
+chase_pressure:
+  k_sensitivity: 0.045
+  c_max_initial_rrr: 13.5
+  scale_min: 0.0
+  scale_max: 10.0
+  resource_weights:
+    balls_weight: 0.45
+    wickets_weight: 0.55
+
+defensive_pressure:
+  scale_min: 0.0
+  scale_max: 10.0
+
+innings1_acceleration:
+  scale_min: 0.0
+  scale_max: 10.0
+  default_par_score: 165.0
+
+cutoffs:
+  low_threshold: 3.5
+  moderate_threshold: 6.0
+  high_threshold: 7.5
+  very_high_threshold: 8.8

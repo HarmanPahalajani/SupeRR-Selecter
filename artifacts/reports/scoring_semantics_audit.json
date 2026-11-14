@@ -1,0 +1,268 @@
+{
+  "status": "PASS",
+  "total_deliveries": 200999,
+  "unique_scoring_combinations_count": 63,
+  "total_wickets_recorded": 10881,
+  "bowler_credited_wickets": 10272,
+  "non_bowler_wickets": 609,
+  "reconciled_innings_sample_size": 25,
+  "reconciled_matches": [
+    {
+      "match_id": 13511,
+      "match_date": "2022-01-22",
+      "home_team": "West Indies",
+      "away_team": "England",
+      "innings_1_total": 103,
+      "innings_2_total": 104,
+      "recorded_result": "West Indies Won by 9 Wickets",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13512,
+      "match_date": "2022-01-23",
+      "home_team": "West Indies",
+      "away_team": "England",
+      "innings_1_total": 171,
+      "innings_2_total": 170,
+      "recorded_result": "England Won by 1 Run",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13513,
+      "match_date": "2022-01-26",
+      "home_team": "West Indies",
+      "away_team": "England",
+      "innings_1_total": 224,
+      "innings_2_total": 204,
+      "recorded_result": "West Indies Won by 20 runs",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13514,
+      "match_date": "2022-01-29",
+      "home_team": "West Indies",
+      "away_team": "England",
+      "innings_1_total": 193,
+      "innings_2_total": 159,
+      "recorded_result": "England Won by 34 runs",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13515,
+      "match_date": "2022-01-30",
+      "home_team": "West Indies",
+      "away_team": "England",
+      "innings_1_total": 179,
+      "innings_2_total": 162,
+      "recorded_result": "West Indies Won by 17 runs",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13522,
+      "match_date": "2022-02-16",
+      "home_team": "India",
+      "away_team": "West Indies",
+      "innings_1_total": 157,
+      "innings_2_total": 162,
+      "recorded_result": "India Won by 6 Wickets",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13523,
+      "match_date": "2022-02-18",
+      "home_team": "India",
+      "away_team": "West Indies",
+      "innings_1_total": 186,
+      "innings_2_total": 178,
+      "recorded_result": "India Won by 8 Runs",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13524,
+      "match_date": "2022-02-20",
+      "home_team": "India",
+      "away_team": "West Indies",
+      "innings_1_total": 184,
+      "innings_2_total": 167,
+      "recorded_result": "India Won by 17 runs",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13612,
+      "match_date": "2022-02-11",
+      "home_team": "Australia",
+      "away_team": "Sri Lanka",
+      "innings_1_total": 149,
+      "innings_2_total": 122,
+      "recorded_result": "Australia Won by 20 runs (D/L method)",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13614,
+      "match_date": "2022-02-15",
+      "home_team": "Australia",
+      "away_team": "Sri Lanka",
+      "innings_1_total": 121,
+      "innings_2_total": 124,
+      "recorded_result": "Australia Won by 6 Wkts",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13615,
+      "match_date": "2022-02-18",
+      "home_team": "Australia",
+      "away_team": "Sri Lanka",
+      "innings_1_total": 139,
+      "innings_2_total": 143,
+      "recorded_result": "Australia Won by 6 Wickets",
+      "status": "PASS"
+    },
+    {
+      "match_id": 13616,
+      "match_date": "2022-02-20",
+      "home_team": "Australia",
+      "away_team": "Sri Lanka",
+      "innings_1_total": 154,
+      "innings_2_total": 155,
+      "recorded_result": "Sri Lanka Won by 5 wickets",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14094,
+      "match_date": "2022-03-26",
+      "home_team": "Chennai Super Kings",
+      "away_team": "Kolkata Knight Riders",
+      "innings_1_total": 131,
+      "innings_2_total": 133,
+      "recorded_result": "Kolkata Knight Riders Won by 6 Wkts",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14095,
+      "match_date": "2022-03-27",
+      "home_team": "Delhi Capitals",
+      "away_team": "Mumbai Indians",
+      "innings_1_total": 177,
+      "innings_2_total": 179,
+      "recorded_result": "Delhi Capitals Won by 4 Wickets",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14096,
+      "match_date": "2022-03-27",
+      "home_team": "Punjab Kings",
+      "away_team": "Royal Challengers Bengaluru",
+      "innings_1_total": 205,
+      "innings_2_total": 208,
+      "recorded_result": "Punjab Kings Won by 5 Wkts",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14097,
+      "match_date": "2022-03-28",
+      "home_team": "Gujarat Titans",
+      "away_team": "Lucknow Super Giants",
+      "innings_1_total": 158,
+      "innings_2_total": 161,
+      "recorded_result": "Gujarat Titans Won by 5 Wickets",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14098,
+      "match_date": "2022-03-29",
+      "home_team": "Sunrisers Hyderabad",
+      "away_team": "Rajasthan Royals",
+      "innings_1_total": 210,
+      "innings_2_total": 149,
+      "recorded_result": "Rajasthan Royals Won by 61 Runs",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14100,
+      "match_date": "2022-03-31",
+      "home_team": "Lucknow Super Giants",
+      "away_team": "Chennai Super Kings",
+      "innings_1_total": 210,
+      "innings_2_total": 211,
+      "recorded_result": "Lucknow Super Giants Won by 6 Wkts",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14101,
+      "match_date": "2022-04-01",
+      "home_team": "Kolkata Knight Riders",
+      "away_team": "Punjab Kings",
+      "innings_1_total": 137,
+      "innings_2_total": 141,
+      "recorded_result": "Kolkata Knight Riders Won by 6 wkts",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14102,
+      "match_date": "2022-04-02",
+      "home_team": "Mumbai Indians",
+      "away_team": "Rajasthan Royals",
+      "innings_1_total": 193,
+      "innings_2_total": 170,
+      "recorded_result": "Rajasthan Royals Won by 23 Runs",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14106,
+      "match_date": "2022-04-05",
+      "home_team": "Rajasthan Royals",
+      "away_team": "Royal Challengers Bengaluru",
+      "innings_1_total": 169,
+      "innings_2_total": 173,
+      "recorded_result": "Royal Challengers Bengaluru Won by 4 Wkts",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14107,
+      "match_date": "2022-04-06",
+      "home_team": "Kolkata Knight Riders",
+      "away_team": "Mumbai Indians",
+      "innings_1_total": 161,
+      "innings_2_total": 162,
+      "recorded_result": "Kolkata Knight Riders Won by 5 Wickets",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14114,
+      "match_date": "2022-04-11",
+      "home_team": "Sunrisers Hyderabad",
+      "away_team": "Gujarat Titans",
+      "innings_1_total": 162,
+      "innings_2_total": 168,
+      "recorded_result": "Sunrisers Hyderabad Won by 8 Wickets",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14115,
+      "match_date": "2022-04-12",
+      "home_team": "Chennai Super Kings",
+      "away_team": "Royal Challengers Bengaluru",
+      "innings_1_total": 216,
+      "innings_2_total": 193,
+      "recorded_result": "Chennai Super Kings Won by 23 Runs",
+      "status": "PASS"
+    },
+    {
+      "match_id": 14117,
+      "match_date": "2022-04-14",
+      "home_team": "Rajasthan Royals",
+      "away_team": "Gujarat Titans",
+      "innings_1_total": 192,
+      "innings_2_total": 155,
+      "recorded_result": "Gujarat Titans Won by 37 runs",
+      "status": "PASS"
+    }
+  ],
+  "rules_certified": {
+    "batter_runs": "Column 'runs' represents striker runs (0-6) plus extras_2_runs on Overstep/no-ball anomalies",
+    "extras_wide": "Wide deliveries award extras1_runs (plus any extras_2_runs), are charged to bowler, and are not legal deliveries",
+    "extras_no_ball": "Overstep/no-ball awards extras1_runs penalty, is charged to bowler, and is not legal delivery",
+    "extras_byes_legbyes": "Byes and legbyes award extras1_runs, are NOT charged to bowler, and are legal deliveries",
+    "bowler_wickets": "Caught, Bowled, LBW, Stump, Hit Wicket are credited to bowler; RunOut, Retire Out, Obstructing are excluded"
+  }
+}
