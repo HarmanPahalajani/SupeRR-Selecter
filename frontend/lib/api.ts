@@ -266,7 +266,7 @@ export const api = {
         players: [
           { player_id: 4847, player_name: "Finn Allen", priority: "High", target_role: "Top-Order Explosive Batter" },
           { player_id: 2933, player_name: "Jasprit Bumrah", priority: "High", target_role: "Elite Death Bowler" },
-          { player_id: 3535, player_name: "Heinrich Klaasen", priority: "High", target_role: "Middle-Overs Spin Destroyer" },
+          { player_id: 4260, player_name: "Heinrich Klaasen", priority: "High", target_role: "Middle-Overs Spin Destroyer" },
         ],
       },
     ];
