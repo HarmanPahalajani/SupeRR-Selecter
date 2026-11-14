@@ -34,7 +34,7 @@ const NAV_SECTIONS: NavSection[] = [
     items: [
       { name: "Intelligence Overview", href: "/", icon: Compass, exact: true },
       { name: "Player Discovery", href: "/discovery", icon: Users },
-      { name: "Player Intelligence", href: "/players/47", icon: UserCheck },
+      { name: "Player Intelligence", href: "/players", icon: UserCheck },
       { name: "Player Comparison Lab", href: "/comparison", icon: GitCompare },
     ],
   },
