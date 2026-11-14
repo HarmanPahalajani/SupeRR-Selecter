@@ -71,9 +71,9 @@ function DiscoveryContent() {
   const initialTab =
     tabParam === "pressure-bowlers" || tabParam === "bowling"
       ? "PRESSURE_BOWLING"
-      : tabParam === "pressure" || tabParam === "batting"
-      ? "PRESSURE"
-      : "DISCIPLINE";
+      : tabParam === "overall" || tabParam === "discipline"
+      ? "DISCIPLINE"
+      : "PRESSURE";
 
   // Navigation tab
   const [activeTab, setActiveTab] = useState<"DISCIPLINE" | "PRESSURE" | "PRESSURE_BOWLING">(initialTab);
@@ -280,7 +280,7 @@ function DiscoveryContent() {
             Player Talent Discovery
           </h1>
           <p className="text-xs text-slate-500 mt-0.5">
-            Identify proven contributors through independent discipline ratings and situational pressure intelligence.
+            Identify proven contributors through situational pressure intelligence and overall ratings.
           </p>
         </div>
 
@@ -309,21 +309,6 @@ function DiscoveryContent() {
       {/* Sub-Navigation Tabs */}
       <div className="flex items-center gap-3 border-b border-slate-200">
         <button
-          onClick={() => setActiveTab("DISCIPLINE")}
-          className={`pb-3 px-1 text-xs font-bold transition-all relative flex items-center gap-2 ${
-            activeTab === "DISCIPLINE"
-              ? "text-rr-pink border-b-2 border-rr-pink"
-              : "text-slate-500 hover:text-rr-navy"
-          }`}
-        >
-          <Award className="w-4 h-4" />
-          <span>Discipline Ratings & Baselines</span>
-          <span className="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 font-semibold">
-            1,217 Players
-          </span>
-        </button>
-
-        <button
           onClick={() => setActiveTab("PRESSURE")}
           className={`pb-3 px-1 text-xs font-bold transition-all relative flex items-center gap-2 ${
             activeTab === "PRESSURE"
@@ -350,6 +335,21 @@ function DiscoveryContent() {
           <span>Bowling Under Pressure</span>
           <span className="text-[10px] px-2 py-0.5 rounded-full bg-pink-100 text-rr-pink font-bold">
             36 Qualified Bowlers
+          </span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab("DISCIPLINE")}
+          className={`pb-3 px-1 text-xs font-bold transition-all relative flex items-center gap-2 ${
+            activeTab === "DISCIPLINE"
+              ? "text-rr-pink border-b-2 border-rr-pink"
+              : "text-slate-500 hover:text-rr-navy"
+          }`}
+        >
+          <Award className="w-4 h-4" />
+          <span>Overall Rating</span>
+          <span className="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 font-semibold">
+            1,217 Players
           </span>
         </button>
       </div>
