@@ -7,7 +7,6 @@ import { api } from "@/lib/api";
 import { formatRating } from "@/lib/presentation";
 import {
   Search,
-  UserCheck,
   Sparkles,
   ArrowRight,
   TrendingUp,
@@ -105,13 +104,8 @@ export default function PlayersSearchHubPage() {
       <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-blue-100/30 blur-3xl pointer-events-none" />
 
       <div className="w-full max-w-2xl mx-auto space-y-7 text-center relative z-10">
-        {/* Crest & Title Header */}
+        {/* Title Header */}
         <div className="space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-pink-50 border border-pink-200/70 text-xs font-bold text-rr-pink shadow-2xs">
-            <UserCheck className="w-4 h-4 text-rr-pink" />
-            <span>Rajasthan Royals Player Dossiers</span>
-          </div>
-
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-rr-navy">
             Search Player Intelligence
           </h1>
@@ -123,8 +117,8 @@ export default function PlayersSearchHubPage() {
 
         {/* Center Search Bar Container */}
         <div className="relative text-left">
-          <div className="relative flex items-center shadow-md rounded-2xl border-2 border-slate-200 bg-white focus-within:border-rr-pink focus-within:ring-4 focus-within:ring-pink-100/60 transition-all">
-            <Search className="w-5 h-5 text-slate-400 absolute left-4.5 pointer-events-none" />
+          <div className="relative flex items-center shadow-md rounded-2xl border-2 border-slate-200 bg-white focus-within:border-rr-pink focus-within:ring-4 focus-within:ring-pink-100/60 transition-all px-4 sm:px-5">
+            <Search className="w-5 h-5 text-slate-400 shrink-0 mr-3 pointer-events-none" />
             <input
               ref={inputRef}
               type="text"
@@ -132,7 +126,7 @@ export default function PlayersSearchHubPage() {
               onChange={(e) => setQuery(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Search any player by name... (e.g. Virat Kohli, Jasprit Bumrah)"
-              className="w-full pl-12 pr-12 py-4 text-sm sm:text-base font-semibold text-slate-800 placeholder-slate-400 bg-transparent rounded-2xl focus:outline-none"
+              className="w-full py-4 text-sm sm:text-base font-semibold text-slate-800 placeholder-slate-400 bg-transparent focus:outline-none"
             />
             {query && (
               <button
@@ -141,7 +135,7 @@ export default function PlayersSearchHubPage() {
                   setResults([]);
                   inputRef.current?.focus();
                 }}
-                className="absolute right-4 p-1 rounded-full text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
+                className="p-1.5 rounded-full text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors shrink-0 ml-2"
                 title="Clear search"
               >
                 <X className="w-4 h-4" />

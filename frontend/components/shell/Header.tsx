@@ -16,7 +16,8 @@ import {
 const PAGE_TITLES: Record<string, { title: string; category: string }> = {
   "/": { title: "Intelligence Overview", category: "Intelligence" },
   "/discovery": { title: "Player Discovery", category: "Intelligence" },
-  "/players": { title: "Player Intelligence Search", category: "Intelligence" },
+  "/players": { title: "Player Intelligence", category: "Intelligence" },
+  "/players/": { title: "Player Intelligence", category: "Intelligence" },
   "/comparison": { title: "Player Comparison Lab", category: "Intelligence" },
   "/squad-architect": { title: "Squad Architect", category: "Recruitment" },
   "/auction-simulator": { title: "Auction Decision Simulator", category: "Recruitment" },
